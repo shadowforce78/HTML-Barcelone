@@ -82,3 +82,46 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .img-bus, .img1, .img2, .img3, .img4 {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .img-bus, .img1, .img2, .img3, .img4 {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
