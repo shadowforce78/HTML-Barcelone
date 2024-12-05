@@ -110,13 +110,28 @@ nav ul {
 }
 
 li.navbar {
-    color: white;
-    text-decoration: none;
     transition: transform 0.3s;
 }
 
 li.navbar:hover {
     transform: scale(1.025);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+li.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 #logo {
@@ -138,11 +153,12 @@ li.navbar:hover {
         font-size: 1.5em;
     }
 
-    .img-bus,
-    .img1,
-    .img2,
-    .img3,
-    .img4 {
+    .img-bus {
+        width: 60px;
+        height: 38px;
+    }
+
+    img {
         max-width: 100%;
         margin: 10px 0;
     }
@@ -153,6 +169,11 @@ li.navbar:hover {
 
     li {
         font-size: 1.5rem;
+    }
+
+    footer {
+        position: static;
+        margin: 20px auto;
     }
 }
 
@@ -165,11 +186,12 @@ li.navbar:hover {
         font-size: 1.2em;
     }
 
-    .img-bus,
-    .img1,
-    .img2,
-    .img3,
-    .img4 {
+    .img-bus {
+        width: 50px;
+        height: 32px;
+    }
+
+    img {
         max-width: 100%;
         margin: 5px 0;
     }
