@@ -1,5 +1,11 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li, img {
+body,
+h1,
+h2,
+p,
+ul,
+li,
+img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,7 +103,11 @@ body {
         font-size: 1.5em;
     }
 
-    .img-bus, .img1, .img2, .img3, .img4 {
+    .img-bus,
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
         max-width: 100%;
         margin: 10px 0;
     }
@@ -116,7 +126,11 @@ body {
         font-size: 1.2em;
     }
 
-    .img-bus, .img1, .img2, .img3, .img4 {
+    .img-bus,
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
         max-width: 100%;
         margin: 5px 0;
     }
