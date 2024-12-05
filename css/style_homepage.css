@@ -46,12 +46,10 @@ nav ul {
 }
 
 .img-bus {
-    margin-top: 20px;
+    margin-left: 10px;
     width: 80px;
     height: 51px;
-    top: 0%;
-    left: 20%;
-    position: absolute;
+    position: static;
 }
 
 li {
@@ -67,6 +65,7 @@ li:hover {
 #logo {
     flex: 1 1 20rem;
     align-items: center;
+    display: flex;
 }
 
 /* intro */
