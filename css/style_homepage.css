@@ -1,53 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-    
+
 body {
     zoom: 100%;
     background-color: gainsboro;
 }
 
-h1{
-    font-size: 2.6rem ;
+h1 {
+    font-size: 2.6rem;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-li{
+li {
     font-size: 2.0rem;
 }
 
-.main-head{
+.main-head {
     background: Grey;
     color: white;
 }
 
-nav{
-    
+nav {
+
     min-height: 10vh;
     display: flex;
-    align-items: center; 
+    align-items: center;
     width: 90%;
     margin: auto;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
-.img-bus{
+.img-bus {
     margin-top: 20px;
-    width: 80px;      
-    height: 51px; 
+    width: 80px;
+    height: 51px;
     top: 0%;
     left: 20%;
     position: absolute;
@@ -56,11 +57,11 @@ nav ul{
 li {
     color: white;
     text-decoration: none;
-    transition: transform 0.3s ; 
+    transition: transform 0.3s;
 }
 
 li:hover {
-    transform: scale(1.025); 
+    transform: scale(1.025);
 }
 
 #logo {
@@ -80,6 +81,7 @@ li:hover {
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 90%;
 }
 
 .intro h2 {
@@ -90,73 +92,160 @@ li:hover {
 }
 
 .bloc-presentation {
-   position: absolute; 
-    top: 50%;          
-    left: 35%;
-    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
     background-color: #ffffff;
-    width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
 }
 
-.img1{
+.bloc-presentation p {
+    flex: 1 1 60%;
+}
+
+.text-content {
+    flex: 1 1 60%;
+    margin-right: 20px;
+}
+
+.img1 {
     margin-top: 20px;
-    width: 240px;      
-    height: 173px; 
+    width: 240px;
+    height: 173px;
     top: 50%;
     left: 50%;
     position: absolute;
 }
 
-.img2{
+.img2 {
     margin-top: 20px;
-    width: 240px;      
-    height: 173px; 
+    width: 240px;
+    height: 173px;
     top: 28%;
     left: 50%;
     position: absolute;
 }
 
-.img3{
+.img3 {
     margin-top: 20px;
-    width: 240px;      
-    height: 173px; 
+    width: 240px;
+    height: 173px;
     top: 50%;
     left: 65%;
     position: absolute;
 }
 
-.img4{
+.img4 {
     margin-top: 20px;
-    width: 240px;      
-    height: 173px; 
+    width: 240px;
+    height: 173px;
     top: 28%;
     left: 65%;
     position: absolute;
 }
 
 .information {
-    
-    position: fixed; 
-    bottom: 15%;       
+    bottom: 15%;
     left: 15%;
-    width: 70%;     
+    width: 70%;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
 }
 
-footer  {
-    position: fixed; 
-    bottom: 0%;       
-    left: center;
-    width: 100%;     
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
-    color: white;
     background-color: gray;
+    color: white;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1 1 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-container img {
+    margin: 10px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    position: static;
+}
+
+.carousel-container {
+    flex: 1 1 35%;
+    position: relative;
+    max-width: 240px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    .bloc-presentation {
+        position: static;
+        transform: none;
+        width: 90%;
+    }
+
+    .information {
+        position: static;
+        margin: 20px auto;
+    }
+
+    footer {
+        position: static;
+        margin: 20px auto;
+    }
 }
