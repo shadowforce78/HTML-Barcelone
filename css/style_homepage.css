@@ -45,12 +45,12 @@ nav ul {
     flex-wrap: wrap;
 }
 
-.img-bus {
+/* .img-bus {
     margin-left: 10px;
     width: 80px;
     height: 51px;
     position: static;
-}
+} */
 
 li {
     color: white;

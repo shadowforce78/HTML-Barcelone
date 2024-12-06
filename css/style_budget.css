@@ -88,12 +88,12 @@ nav ul {
     flex-wrap: wrap;
 }
 
-.img-bus {
+/* .img-bus {
     margin-left: 10px;
     width: 80px;
     height: 51px;
     position: static;
-}
+} */
 
 li.navbar {
     transition: transform 0.3s;
@@ -139,10 +139,10 @@ li.navbar a {
         font-size: 1.5em;
     }
 
-    .img-bus {
+    /* .img-bus {
         width: 60px;
         height: 38px;
-    }
+    } */
 
     .container {
         padding: 10px;
@@ -167,10 +167,10 @@ li.navbar a {
         font-size: 1.2em;
     }
 
-    .img-bus {
+    /* .img-bus {
         width: 50px;
         height: 32px;
-    }
+    } */
 
     .container {
         padding: 5px;
