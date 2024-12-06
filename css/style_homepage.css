@@ -68,6 +68,12 @@ li:hover {
     display: flex;
 }
 
+.logoIUT {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
 /* intro */
 
 .intro {

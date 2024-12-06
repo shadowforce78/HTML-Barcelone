@@ -126,6 +126,12 @@ li.navbar a {
     display: flex;
 }
 
+.logoIUT {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
